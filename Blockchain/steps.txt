@@ -1,0 +1,7 @@
+Node 1 Public address: 0x2610F3621Caa0389e55774a4f7A774D7fb3Eb73D
+Node 2 Public address: 0xeD51C9d956D4394A923CD054b0817B025D4842Ea
+
+./geth --datadir node1 --unlock 0x2610F3621Caa0389e55774a4f7A774D7fb3Eb73D --mine --rpc --allow-insecure-unlock
+
+./geth --datadir node2 --unlock 0xeD51C9d956D4394A923CD054b0817B025D4842Ea --bootnodes "enode://019bf8deac8db07777f5b0b8fcb4614a545f50d7f689815f1c32ceaa44c212d2c89b45d6b02f8c84b20e1785354e61cbfa0632f53b145501218b714a9c7dc853@127.0.0.1:30303" --mine --port 30304 --ipcdisable --allow-insecure-unlock
+
